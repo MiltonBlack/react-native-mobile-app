@@ -33,8 +33,8 @@ const BottomTabNav = () => {
                 name='Setting'
                 component={Settings}
                 options={{
-                    tabBarLabel: 'bell', tabBarIcon: ({ color }) => (
-                        <MaterialCommunityIcons name='home' color={color} size={26} />
+                    tabBarLabel: 'Settings', tabBarIcon: ({ color }) => (
+                        <MaterialCommunityIcons name='bell' color={color} size={26} />
                     )
                 }} />
         </Tabs.Navigator>
