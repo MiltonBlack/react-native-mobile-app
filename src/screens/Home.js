@@ -1,4 +1,4 @@
-import { View, Text, Image, ScrollView, FlatList, StyleSheet } from 'react-native'
+import { View, Text, Image, FlatList, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const Home = () => {
@@ -111,7 +111,7 @@ const Home = () => {
   }
   const renderItems = ({ item }) => {
     return (
-    <View style={Styles.items} key={item.id}>
+    <TouchableOpacity style={Styles.items} key={item.id}>
       <View style={Styles.thumbNailContainer}>
         <Image style={Styles.thumbNail} source={item.postImage} />
       </View>
@@ -119,7 +119,7 @@ const Home = () => {
         <Text style={Styles.title}>{item.post_title}</Text>
         <Text style={Styles.desc}>{item.desc}</Text>
       </View>
-    </View>)
+    </TouchableOpacity>)
   }
   return (
     <View>
