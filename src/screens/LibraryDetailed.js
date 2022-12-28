@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 
-const LibraryDetailed = ({route }) => {
+const LibraryDetailed = ({ route }) => {
   return (
     <View>
       <Text style={Styles.title}>{route.params.context}</Text>
@@ -10,10 +10,6 @@ const LibraryDetailed = ({route }) => {
   )
 }
 const Styles = StyleSheet.create({
-  banner: {
-    width: '100%',
-    height: 250,
-  },
   title: {
     fontSize: 25,
     color: 'black',

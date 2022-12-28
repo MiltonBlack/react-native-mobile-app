@@ -1,8 +1,7 @@
 import { View, Text, Image, StyleSheet } from 'react-native'
 import React from 'react'
 
-const HomeDetailed = ({ route, navigation }) => {
-  const { item } = route.params;
+const HomeDetailed = ({ route }) => {
   return (
     <View>
       <Image source={route.params.image} style={Styles.banner} />

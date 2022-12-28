@@ -5,7 +5,7 @@ const Library = ({ navigation }) => {
   const data = [
     {
       id: 1,
-      post_title: 'Introduction to Engineering Drawing',
+      post_title: 'Drawing Tools',
       postImage: require('./assets/af-1.jpeg'),
       desc: 'Introduction to the Basics of Engineering Drawing',
 
@@ -103,7 +103,7 @@ const Library = ({ navigation }) => {
   ]
   const headerBlock = () => {
     return (
-      <Text style={Styles.headStyle}>Table of Contents</Text>
+      <Text style={Styles.headStyle}>LIBRARY</Text>
     )
   }
   const seperator = () => {
@@ -134,7 +134,6 @@ const Library = ({ navigation }) => {
         }}
         data={data}
         renderItem={renderItems}
-        ItemSeparatorComponent={seperator}
         ListEmptyComponent={
           <Text>Please Wait while Loading...</Text>
         }
@@ -158,24 +157,27 @@ const Styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    padding: 20,
-    marginBottom: 20,
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
-    shadowColor: '#000',
-    borderRadius: 13,
-    shadowOffset: {
-      width: 3,
-      height: 10
+    justifyContent:'center',
+    padding: 5,
+    margin: 10,
+    backgroundColor: 'rgba(123, 123, 123, 0.98)',
+    shadowColor: 'black',
+    borderRadius: 23,
+   shadowOffset: {
+      width: 15,
+      height: 20
     },
-    shadowOpacity: .5,
-    shadowRadius: 20
+    shadowOpacity: .3,
+    shadowRadius: 10
   },
   title: {
     fontWeight: '600',
     fontSize: 20,
-    marginHorizontal: 20,
-    padding: 20,
-    color: 'black'
+    marginHorizontal: 10,
+    padding: 10,
+    color: 'black',
+    textAlign:'center',
+  
   }
 })
 export default Library
