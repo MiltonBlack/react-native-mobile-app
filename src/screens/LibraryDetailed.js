@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const LibraryDetailed = () => {
+const LibraryDetailed = ({ navigation }) => {
   return (
     <View>
-      <Text>LibraryDetailed</Text>
+      <Text>{navigation.getParam('post_title')}</Text>
+      <Text>{navigation.getParam('desc')}</Text>
     </View>
   )
 }

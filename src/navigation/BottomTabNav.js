@@ -1,21 +1,21 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
-import Home from '../screens/Home';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Library from '../screens/Library';
 import Settings from '../screens/Settings';
+import HomeStack from './HomeStack';
 
 const Tabs = createMaterialBottomTabNavigator();
 const BottomTabNav = () => {
   return (
     <Tabs.Navigator
-            initialRouteName='Home'
+            initialRouteName='HomeStack'
             activeColor='#e91e63'
             barStyle={{ backgroundColor: 'tomato' }}>
             <Tabs.Screen
                 name='Home'
-                component={Home}
+                component={HomeStack}
                 options={{
                     tabBarLabel: 'Home', tabBarIcon: ({ color }) => (
                         <MaterialCommunityIcons name='home' color={color} size={26} />
