@@ -2,9 +2,9 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Library from '../screens/Library';
 import Settings from '../screens/Settings';
 import HomeStack from './HomeStack';
+import LibraryStack from './LibraryStack';
 
 const Tabs = createMaterialBottomTabNavigator();
 const BottomTabNav = () => {
@@ -22,8 +22,8 @@ const BottomTabNav = () => {
                     )
                 }} />
                 <Tabs.Screen
-                name='Library'
-                component={Library}
+                name='LibraryStack'
+                component={LibraryStack}
                 options={{
                     tabBarLabel: 'Library', tabBarIcon: ({ color }) => (
                         <MaterialCommunityIcons name='account' color={color} size={26} />

@@ -114,9 +114,11 @@ const Library = ({ navigation }) => {
       <TouchableOpacity
         style={Styles.items}
         key={item.id}
-        onPress={() => { navigation.navigate('LibraryDetailed', item) }}>
+        onPress={() => { 
+          navigation.navigate('LibraryDetailed', { context: item.post_title, desc: item.desc, image: item.postImage }) }}>
         <View>
-          <Text style={Styles.title}>{item.post_title}</Text>
+          <Text 
+            style={Styles.title}>{item.post_title}</Text>
         </View>
       </TouchableOpacity>)
   }
