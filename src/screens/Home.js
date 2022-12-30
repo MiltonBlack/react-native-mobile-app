@@ -314,7 +314,7 @@ const Home = ({ navigation }) => {
       <TouchableOpacity
         style={Styles.items}
         key={item.id}
-        onPress={() => { navigation.navigate('HomeDetailed', { context: item.post_title, desc: item.desc, image: item.postImage, title_1: item.title_1, body_1: item.body_1, image_1: item.Image_1, body_2:item.body_2 }) }}>
+        onPress={() => { navigation.navigate('HomeDetailed', { context: item.post_title, desc: item.desc, image: item.postImage, title_1: item.title_1, body_1: item.body_1, image_1: item.Image_1, body_2:item.body_2, image_2: item.Image_2, body_3: item.body_3, image_3: item.Image_3, title_2:item.title_2 }) }}>
         <View style={Styles.thumbNailContainer}>
           <Image style={Styles.thumbNail} source={item.postImage} />
         </View>
