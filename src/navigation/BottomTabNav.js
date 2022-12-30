@@ -1,20 +1,23 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Settings from '../screens/Settings';
 import HomeStack from './HomeStack';
 import LibraryStack from './LibraryStack';
+import darkMode from '../styles/darkMode';
+import lightMode from '../styles/lightMode';
 
 const Tabs = createMaterialBottomTabNavigator();
 const BottomTabNav = () => {
+    const [appearance, setAppearance] = useState(lightMode);
   return (
     <Tabs.Navigator
             initialRouteName='HomeStack'
             activeColor='#e91e63'
             barStyle={{ backgroundColor: 'tomato' }}>
             <Tabs.Screen
-                name='Home'
+                name='HomeStack'
                 component={HomeStack}
                 options={{
                     tabBarLabel: 'Home', tabBarIcon: ({ color }) => (

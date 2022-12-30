@@ -1,6 +1,9 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 const darkMode = StyleSheet.create({
+    container:{
+        backgroundColor:'grey'
+      },
     listHeader: {
         height: 55,
         alignItems: 'center',
@@ -36,7 +39,14 @@ const darkMode = StyleSheet.create({
         color: 'white',
         textAlign: 'center',
 
-    }
+    },thumbNailContainer: {
+        backgroundColor: 'white', 
+        borderRadius: 40,
+        height: 100,
+        width: 100,
+        justifyContent: 'center',
+        alignItems: 'center'
+      },
 })
 
 export default darkMode;
