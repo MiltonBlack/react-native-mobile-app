@@ -1,5 +1,6 @@
 import { View, Text, Image, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
+import YoutubeIframe from 'react-native-youtube-iframe'
 
 const HomeDetailed = ({ route }) => {
   return (
@@ -12,6 +13,10 @@ const HomeDetailed = ({ route }) => {
       <Text style={Styles.desc}>{route.params.body_2}</Text>
       {route.params.image && <Image source={route.params.image} style={Styles.image} />}
       <Text style={Styles.desc}>{route.params.body_3}</Text>
+      <YoutubeIframe
+        height={300}
+        play={false}
+        videoId={route.params.video}/>
       <Text style={Styles.desc}>{route.params.title_2}</Text>
     </ScrollView>
   )

@@ -15,7 +15,7 @@ const Home = ({ navigation }) => {
         Image_2: require('./assets/af-1.jpeg'),
         body_3: 'A basic component is often specified with a number of drawings that are connected by a primary drawing or assembly drawing. Additionally, extra textual explanations can be employed in addition to pictorial representations to convey the required information.',
         Image_3: require('./assets/af-1.jpeg'),
-        video: 'youtube video link',
+        video: 'idT7Sf6Nwdk',
         title_2: 'Importance of Engineering Drawing',
         body_4: 'Engineering drawings provide the complete information of a component on its designing aspects. This will be very useful for the engineers to understand the components properly. Drawing gives perfect design on paper with proper dimensions.',
         Image_4: require('./assets/af-1.jpeg'),
@@ -314,7 +314,7 @@ const Home = ({ navigation }) => {
       <TouchableOpacity
         style={Styles.items}
         key={item.id}
-        onPress={() => { navigation.navigate('HomeDetailed', { context: item.post_title, desc: item.desc, image: item.postImage, title_1: item.title_1, body_1: item.body_1, image_1: item.Image_1, body_2:item.body_2, image_2: item.Image_2, body_3: item.body_3, image_3: item.Image_3, title_2:item.title_2 }) }}>
+        onPress={() => { navigation.navigate('HomeDetailed', { context: item.post_title, desc: item.desc, image: item.postImage, title_1: item.title_1, body_1: item.body_1, image_1: item.Image_1, body_2:item.body_2, image_2: item.Image_2, body_3: item.body_3, image_3: item.Image_3, video: item.video, title_2:item.title_2 }) }}>
         <View style={Styles.thumbNailContainer}>
           <Image style={Styles.thumbNail} source={item.postImage} />
         </View>
