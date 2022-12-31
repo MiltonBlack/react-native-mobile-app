@@ -11,13 +11,20 @@ const HomeDetailed = ({ route }) => {
       <Text style={Styles.desc}>{route.params.body_1}</Text>
       <Image source={route.params.image_1} style={Styles.image} />
       <Text style={Styles.desc}>{route.params.body_2}</Text>
-      {route.params.image && <Image source={route.params.image} style={Styles.image} />}
+      {route.params.image && <Image source={route.params.image_2} style={Styles.image} />}
       <Text style={Styles.desc}>{route.params.body_3}</Text>
-      <YoutubeIframe
+      {route.params.video !== '' ? <YoutubeIframe
         height={300}
         play={false}
-        videoId={route.params.video}/>
+        videoId={route.params.video} /> : null}
+      <Image source={route.params.image_3} style={Styles.image} />
       <Text style={Styles.desc}>{route.params.title_2}</Text>
+      <Text style={Styles.desc}>{route.params.body_4}</Text>
+      <Image source={route.params.image_4} style={Styles.image} />
+      <Text style={Styles.desc}>{route.params.body_5}</Text>
+      <Image source={route.params.image_5} style={Styles.image} />
+      <Text style={Styles.desc}>{route.params.body_6}</Text>
+      <Image source={route.params.image_6} style={Styles.image} />
     </ScrollView>
   )
 }
@@ -38,9 +45,9 @@ const Styles = StyleSheet.create({
     margin: 10
   },
   image: {
-    width:'90%',
-    height:180,
-    alignSelf:'center'
+    width: '90%',
+    height: 180,
+    alignSelf: 'center'
   }
 })
 

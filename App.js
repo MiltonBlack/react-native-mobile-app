@@ -3,10 +3,11 @@ import { StyleSheet } from 'react-native';
 import StackNav from './src/navigation/StackNav';
 
 const App = () => {
-  return (
+  return (<>
     <NavigationContainer>
-      <StackNav/>
+      <StackNav />
     </NavigationContainer>
+  </>
   );
 };
 
