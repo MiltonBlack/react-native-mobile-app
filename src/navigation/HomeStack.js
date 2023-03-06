@@ -4,6 +4,9 @@ import Home from '../screens/Home';
 import HomeDetailed from '../screens/HomeDetailed';
 
 const Stack = createNativeStackNavigator();
+// setup network connection page as initial route
+// if connection redirect to home page
+// return the internet page if network connection is lost 
 const HomeStack = () => {
     return (
         <Stack.Navigator

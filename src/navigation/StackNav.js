@@ -1,12 +1,23 @@
 import { View, Text, Image } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import BottomTabNav from './BottomTabNav'
+import Internet from '../screens/Internet'
+import NetInfo from '@react-native-community/netinfo'
 
 
 function Splash({ navigation }) {
+const [isOffline, setIsOffline] = useState(false);
+    useEffect(() => {
+        const isOnline = NetInfo.addEventListener(state => {
+            state.isConnected ? setIsOffline(false) : setIsOffline(true);
+            const offline = !(state.isConnected);
+        })
+        return () => isOnline();
+    }, [])
+
     setTimeout(() => {
-        navigation.replace('Engineering Drawing Tutorials')
+        isOffline ? navigation.navigate('Connection') : navigation.replace('Engineering Drawing Tutorials')
     }, 3000)
     return (
         <View>
@@ -23,6 +34,7 @@ const StackNav = () => {
             initialRouteName='Splash'>
             <Stack.Screen name='Splash' component={Splash} options={{ headerShown: false }} />
             <Stack.Screen name='Engineering Drawing Tutorials' component={BottomTabNav} />
+            <Stack.Screen name='Connection' component={Internet} options={{ headerShown: false }} />
         </Stack.Navigator>
     )
 }

@@ -5,100 +5,363 @@ const Library = ({ navigation }) => {
   const data = [
     {
       id: 1,
-      post_title: 'Drawing Tools',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Introduction to the Basics of Engineering Drawing',
-
+      title: "Lines in Engineering Drawing",
+      image: require('./assets/af-1.jpeg'),
+      video: 'QEb1j4qj-4',
+      body: 'Know the Types of Lines and Their uses in Engineering Drawings',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 2,
-      post_title: 'Technical Drawing Basics and Requirements',
-      postImage: require('./assets/razer.jpeg'),
-      desc: 'Basics and Requirements of Engineering Drawing concepts',
-
+      title: "Division of Lines",
+      image: require('./assets/af-1.jpeg'),
+      video: '2Cds4GwmZ5k',
+      body: 'Divide a Straight line into an equal number of parts',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 3,
-      post_title: 'Technical Drawing Line Geometry',
-      postImage: require('./assets/samsung.jpeg'),
-      desc: 'Lines and Line Geometry In Technical Drawing',
-
+      title: "Perpendicular Lines",
+      image: require('./assets/af-1.jpeg'),
+      video: '0FCHrqsNGeg',
+      body: 'Constructing lines that are at angle 90 degrees to each other',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 4,
-      post_title: 'Technical Drawing Basic Shapes',
-      postImage: require('./assets/sony.jpeg'),
-      desc: 'Triangles, Quadlterial and Polygons',
+      title: "Angle 60 Degrees",
+      image: require('./assets/af-1.jpeg'),
+      video: 'ow_lFFk6YeA',
+      body: 'Constructing angle 60 Degrees and Bisecting it',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 5,
-      post_title: 'Conic Sections',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Conic sections shapes',
-
+      title: "Angle 90 Degrees",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 6,
-      post_title: 'Loci',
-      postImage: require('./assets/sony-headset.jpeg'),
-      desc: 'Cycloids, Epicycloids, Hypocycloids, E',
-
+      title: "Construct any Polygon on a given square base",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 7,
-      post_title: 'Tangent to Conic Sections and Loci',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Tangents and Normals to Conic sections and locis',
-
+      title: "Construct Polygon using General method",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 8,
-      post_title: 'Tangency',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Introduction to Tangency and Arcs in Engineering Drawing',
-
+      title: "Construct an Ellipse using Rectangle Method",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 9,
-      post_title: 'Views in Technical/Engineering Drawing',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Introduction to the Basic Views of Engineering Drawing',
-
+      title: "Construct an Ellipse using Auxillary Method",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 10,
-      post_title: 'Isometric Projection',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Constructing and Interpreting Isometric Figures',
-
+      title: "Construct a Parabola",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 11,
-      post_title: 'Orthographic Projection',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Orthographic Projections in Engineering Drawing',
-
+      title: "Construct an Archmedian Spiral",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 12,
-      post_title: 'Sectioning',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Sectioning Views in Engineering Drawing',
-
+      title: "Construct an Involute of a Circle",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 13,
-      post_title: 'Assembly Drawing',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Assembly Engineering Drawing',
-
+      title: "Cycloid",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     },
     {
       id: 14,
-      post_title: 'Screws thread, Fasteners and Locking Devices',
-      postImage: require('./assets/af-1.jpeg'),
-      desc: 'Screws thread, Fasteners and Locking Device',
-
+      title: "Epicycloid",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 15,
+      title: "Hypocycloid",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 16,
+      title: "Tangent to an Ellipse",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 17,
+      title: "Tangent to a Parabola",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 18,
+      title: "Tangent to a Cycloid",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 19,
+      title: "Tangency Problem 1",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 20,
+      title: "Tangency problem 2",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 21,
+      title: "Tangency Problem 3",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 22,
+      title: "Tangency Problem 4",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 23,
+      title: "Tangency Problem 5",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 24,
+      title: "Tangency Problem 6",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 25,
+      title: "Isometric Projection Problem 1",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 26,
+      title: "Isometric Projection Problem 2",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 27,
+      title: "Isometric Projection Problem 3",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 28,
+      title: "Isometric Projection Problem 4",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 29,
+      title: "Isometric Projection Problem 5",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 30,
+      title: "Isometric Projection Problem 6",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 31,
+      title: "Isometric Circles Projection 1",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 32,
+      title: "Isometric Circles Projection 2",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 33,
+      title: "Isometric Circles Projection 3",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 34,
+      title: "Isometric Circles Projection 4",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 35,
+      title: "First Angle Projection 1",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 36,
+      title: "First Angle Projection 2",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 37,
+      title: "Third Angle Projection 1",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 38,
+      title: "Third Angle Projection 2",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 39,
+      title: "Sectioning Example 1",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 40,
+      title: "Sectioning Example 2",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 41,
+      title: "Sectioning Example 3",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 42,
+      title: "True Shape of a Hexagon",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 43,
+      title: "True Shape of a Pyramid",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 44,
+      title: "Development",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
+    },
+    {
+      id: 45,
+      title: "FreeHand Sketching 1",
+      image: require('./assets/af-1.jpeg'),
+      video: '',
+      body: '',
+      warn: 'Put on your Internet before watching the videos'
     }
   ]
   const headerBlock = () => {
@@ -115,10 +378,10 @@ const Library = ({ navigation }) => {
         style={Styles.items}
         key={item.id}
         onPress={() => { 
-          navigation.navigate('LibraryDetailed', { context: item.post_title, desc: item.desc, image: item.postImage }) }}>
+          navigation.navigate('LibraryDetailed', { context: item.title, image: item.postImage, video: item.video, content: item.body }) }}>
         <View>
           <Text 
-            style={Styles.title}>{item.post_title}</Text>
+            style={Styles.title}>{item.title}</Text>
         </View>
       </TouchableOpacity>)
   }
