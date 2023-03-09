@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import NetInfo from '@react-native-community/netinfo'
-import { AsyncStorage } from 'react-native'
 
 const Internet = ({ navigation }) => {
     const [isInternetConnected, setInternetIsConnected] = useState(false);
@@ -14,12 +13,12 @@ const Internet = ({ navigation }) => {
     }, [])
     return (
         <View style={Styles.container}>
-            <Text>
+            <Text style={Styles.text}>
                 Your Internet is Not connected! or you don't have an Active Internet Connection!!!.
             </Text>
-            <Text>Please Connect to the Internet</Text>
+            <Text style={Styles.text}>Please Connect to the Internet</Text>
             <TouchableOpacity onPress={() => isInternetConnected ? navigation.navigate('Engineering Drawing Tutorials') : null} style={Styles.refresh}>
-                <Text>
+                <Text style={{ fontSize: 25 }}>
                     Refresh Connection!!!
                 </Text>
             </TouchableOpacity>
@@ -31,15 +30,20 @@ const Styles = StyleSheet.create({
     container: {
         width: '100%',
         height: '100%',
-        alignItems:'center',
-        justifyContent:'center'
+        alignItems: 'center',
+        justifyContent: 'center',
+        margin: 15
     },
     refresh: {
-        fontSize:25,
-        fontWeight:'bold',
-        padding:20,
-        borderRadius:10,
-        backgroundColor:'yellow'
+        fontSize: 25,
+        fontWeight: 'bold',
+        padding: 20,
+        borderRadius: 10,
+        backgroundColor: 'blue'
+    },
+    text: {
+        margin: 10,
+        fontSize: 20,
     }
 })
 

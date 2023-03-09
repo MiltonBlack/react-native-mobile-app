@@ -5,10 +5,10 @@ import BottomTabNav from './BottomTabNav'
 import Internet from '../screens/Internet'
 import NetInfo from '@react-native-community/netinfo'
 
-
 function Splash({ navigation }) {
-const [isOffline, setIsOffline] = useState(false);
+    const [isOffline, setIsOffline] = useState(false);
     useEffect(() => {
+        internetConnect();
         const isOnline = NetInfo.addEventListener(state => {
             state.isConnected ? setIsOffline(false) : setIsOffline(true);
             const offline = !(state.isConnected);

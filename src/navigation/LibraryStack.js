@@ -2,6 +2,7 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Library from '../screens/Library';
 import LibraryDetailed from '../screens/LibraryDetailed';
+import Internet from '../screens/Internet';
 
 const Stack = createNativeStackNavigator();
 const LibraryStack = () => {
@@ -14,7 +15,11 @@ const LibraryStack = () => {
                 options={{ headerShown: false }} />
             <Stack.Screen
                 name='LibraryDetailed'
-                component={LibraryDetailed} />
+                component={LibraryDetailed}
+                options={{ headerShown: false }} />
+            <Stack.Screen name='Connection' 
+                component={Internet} 
+                options={{ headerShown: false }} />
         </Stack.Navigator>
     )
 }

@@ -1,13 +1,15 @@
 import { NavigationContainer } from '@react-navigation/native';
-import { StyleSheet } from 'react-native';
 import StackNav from './src/navigation/StackNav';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 const App = () => {
-  return (<>
+  return (
+  <Provider store={store}>
     <NavigationContainer>
       <StackNav />
     </NavigationContainer>
-  </>
+  </Provider>
   );
 };
 

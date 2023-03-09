@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import YoutubeIframe from 'react-native-youtube-iframe'
 import React from 'react'
 
@@ -6,13 +6,15 @@ const LibraryDetailed = ({ route }) => {
   return (
     <View>
       <Text style={Styles.title}>{route.params.context}</Text>
-      <YoutubeIframe 
+      <YoutubeIframe
         height={300}
         play={false}
-        videoId={route.params.video}/>
-        <Text>Put on your Internet Connection For video streaming from youtube</Text>
-      <Text style={Styles.desc}>{route.params.content}</Text>
-      <Image style={Styles.image} source={route.params.image}/>
+        videoId={route.params.video} />
+      <Text style={{ margin: 10 , color:'red',}}>Put on your Internet Connection For video streaming from youtube</Text>
+      <ScrollView>
+        <Text style={Styles.desc}>{route.params.content}</Text>
+        <Image style={Styles.image} source={route.params.image} />
+      </ScrollView>
     </View>
   )
 }

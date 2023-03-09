@@ -2,6 +2,7 @@ import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Home from '../screens/Home';
 import HomeDetailed from '../screens/HomeDetailed';
+import Internet from '../screens/Internet';
 
 const Stack = createNativeStackNavigator();
 // setup network connection page as initial route
@@ -10,10 +11,11 @@ const Stack = createNativeStackNavigator();
 const HomeStack = () => {
     return (
         <Stack.Navigator
-            initialRouteName='Home'> 
+            initialRouteName='Home'>
             <Stack.Screen name='Home' component={Home}
-            options={{ headerShown:false}} /> 
-            <Stack.Screen name='HomeDetailed' component={HomeDetailed} />
+                options={{ headerShown: false }} />
+            <Stack.Screen name='HomeDetailed' component={HomeDetailed} options={{ headerShown: false }} />
+            <Stack.Screen name='Connection' component={Internet} options={{ headerShown: false }} />
         </Stack.Navigator>
     )
 }

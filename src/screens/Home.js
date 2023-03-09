@@ -7,32 +7,32 @@ const Home = ({ navigation }) => {
     {
       id: 1,
       post_title: 'Introduction to Engineering Drawing',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/introduction.jpeg'),
       title_1: 'What is Engineering/Technical Drawing',
       desc: 'Introduction to the Basics of Engineering Drawing',
       body_1: 'An Engineering Drawing is a type of Technical drawing that includes all the details of a product that needs to be manufactured or machined. Its Goal is to indicate the Geometry required for the products"s creation. ',
-      Image_1: require('./assets/af-1.jpeg'),
+      Image_1: '',
       body_2: 'The measurements, attributes, and other characteristics of the items are described using standardized languages and symbols, which makes it easier for others to interprete the drawing and produce the part accurately.',
-      Image_2: require('./assets/af-1.jpeg'),
+      Image_2: '',
       body_3: 'A basic component is often specified with a number of drawings that are connected by a primary drawing or assembly drawing. Additionally, extra textual explanations can be employed in addition to pictorial representations to convey the required information.',
-      Image_3: require('./assets/af-1.jpeg'),
+      Image_3: '',
       video: '',
       title_2: 'Importance of Engineering Drawing',
       body_4: 'Engineering drawings provide the complete information of a component on its designing aspects. This will be very useful for the engineers to understand the components properly. Drawing gives perfect design on paper with proper dimensions.',
-      Image_4: require('./assets/af-1.jpeg'),
+      Image_4: '',
       body_5: ' Engineering graphics and design is significant because it teaches engineering and technology students about the methods and accepted procedures that are used in engineering graphics and design all over the world. This facilitates the effective dissemination, production, and application of design concepts accross a wide range of nations.',
-      Image_5: require('./assets/af-1.jpeg'),
+      Image_5: '',
       body_6: 'Engineering Professionals can utilize enginering graphics and design to help them tackle more complex technological challenges and to help develop their creative thinking.',
-      Image_6: require('./assets/af-1.jpeg'),
+      Image_6: '',
     },
     {
       id: 2,
       post_title: 'Application and Methods of Representation of Engineering/ Technical Drawing',
-      postImage: require('./assets/razer.jpeg'),
+      postImage: require('./assets/applications.jpeg'),
       title_1: '',
       desc: 'Methods of representation of Engineering Drawing concepts and their applications',
       body_1: 'Technical drawings, sometimes called Engineering Drawings, are precise, in-depth plans or diagrams that explain how an object works or is made. These bluprints are used as a reference by contractors, electricians and engineers when constructing or maintaining engineering structures',
-      Image_1: require('./assets/razer.jpeg'),
+      Image_1: '',
       body_2: '',
       Image_2: '',
       body_3: '',
@@ -40,31 +40,31 @@ const Home = ({ navigation }) => {
       video: '',
       title_2: 'Methods of Representation of Engineering / Technical Drawing',
       body_4: 'Technical Drawings come in a variety of forms, such as 3D drawings (Isometric, Perpective), 3D drawings with an expanded view, complete working drawings, and detail drawings (2D Orthogonal Projections). Diagrams are another sort of Technical drawing with less rigid Data.',
-      Image_4: require('./assets/razer.jpeg'),
+      Image_4: require('./assets/views.jpeg'),
       body_5: '3D Drawing: Isometric Projections',
-      Image_5: '',
+      Image_5: require('./assets/isometric.jpeg'),
       body_6: '2D Drawing: Orthographic Projections',
-      Image_6: '',
+      Image_6: require('./assets/orthographic.png'),
 
     },
     {
       id: 3,
-      post_title: 'Types of Technical Drawing and Standard Drawing Conventions',
-      postImage: require('./assets/razer.jpeg'),
+      post_title: 'Technical Drawings and Standard Drawing Conventions',
+      postImage: require('./assets/types.jpeg'),
       title_1: 'Types of Technical Drawing',
       desc: 'In this section we will be talking about the types and standard of engineering / Technical drawing',
       body_1: '-Architectural Drawing, Engineering Drawing, Patent Drawing, and General Design Illustration Drawing',
       Image_1: '',
       body_2: 'Technical drawings of a structure (or construction project) that meet the concept of architecture are referred to as architectural drawings or architect drawings',
-      Image_2: require('./assets/razer.jpeg'),
+      Image_2: '',
       body_3: 'A Technical drawing that is used to communicate information about an object is an engineering drawing. A detail drawing is frequently used to specify the geometry required for the building of a component. To fully specify even a simple component, a lot of drawings are typically required.',
-      Image_3: require('./assets/razer.jpeg'),
+      Image_3: '',
       video: '',
       title_2: '',
       body_4: 'Any Depictions of the Invention, Techniques or steps to use or implement the invention, or previous art of each feature in the patent claim are considered Patent Drawings. a crucial component of the patent application procedure are the patent drawings.',
-      Image_4: require('./assets/razer.jpeg'),
+      Image_4: '',
       body_5: 'The last Method is frequently used to develop basic character design concepts. An illustration is a drawing, painting, or printed work of art.',
-      Image_5: require('./assets/razer.jpeg'),
+      Image_5: '',
       body_6: '',
       Image_6: '',
 
@@ -72,7 +72,7 @@ const Home = ({ navigation }) => {
     {
       id: 4,
       post_title: 'Standard Conventions in Engineering',
-      postImage: require('./assets/samsung.jpeg'),
+      postImage: require('./assets/standards.jpeg'),
       title_1: '',
       desc: 'Standard Conventions Used In Engineering Drawing',
       body_1: 'In the construction industry all drawings are carried out to a Britsh Standard referred to as BS 1192. This ensures that every drawing produced in the UK relating to a building project will follow the same principles.',
@@ -84,7 +84,7 @@ const Home = ({ navigation }) => {
       video: '',
       title_2: 'Application of Drawing Standards',
       body_4: 'Dimensioning, Letters and Symbols, Borders and Title Blocks, Scales and Scale Rulers, Graphical Symbols and Abbreviations',
-      Image_4: '',
+      Image_4: require('./assets/applications.jpeg'),
       body_5: '',
       Image_5: '',
       body_6: '',
@@ -159,19 +159,19 @@ const Home = ({ navigation }) => {
     {
       id: 8,
       post_title: 'Conic Sections',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/conic_section.jpeg'),
       title_1: 'Conic Sections',
       desc: 'Conic sections shapes',
       body_1: 'A conic section is a curve that is formed by intersecting a plane with a cone. There are four types of conic sections: circles, ellipses, hyperbolas, and parabolas. ',
       Image_1: '',
       body_2: 'A circle is a conic section that is formed when the plane intersects the cone at a right angle (perpendicular) to the axis of the cone. An ellipse is a conic section that is formed when the plane intersects the cone at an angle that is not perpendicular to the axis of the cone. A hyperbola is a conic section that is formed when the plane intersects the cone at an angle that is greater than the opening angle of the cone. A parabola is a conic section that is formed when the plane is tangent to the cone at a single point.',
-      Image_2: '',
+      Image_2: require('./assets/circle.png'),
       body_3: '',
       Image_3: '',
       video: '',
       title_2: '',
       body_4: 'Conic sections have a number of important properties and are used in a variety of applications, including in mathematics, physics, engineering, and design. They are also used to describe the orbits of celestial objects, such as planets and comets, and in the design of optical systems, such as telescopes and lenses.',
-      Image_4: '',
+      Image_4: require('./assets/conic_section.jpeg'),
       body_5: '',
       Image_5: '',
       body_6: '',
@@ -181,19 +181,19 @@ const Home = ({ navigation }) => {
     {
       id: 9,
       post_title: 'Triangles',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/triangles.png'),
       title_1: '',
-      desc: 'Conic sections shapes',
+      desc: 'Types of Triangles and their properties',
       body_1: 'A triangle is a three-sided polygon. It is a basic geometric shape that has three sides and three angles. The sides of a triangle are straight lines that are connected by their endpoints. The angles of a triangle are formed by the intersection of two sides at a vertex.',
       Image_1: '',
       body_2: 'There are several types of triangles that are commonly recognized, based on the lengths of the sides and the measures of the angles. Some examples include: ',
       Image_2: '',
       body_3: '- Scalene triangle: A scalene triangle is a triangle in which all three sides have different lengths and all three angles have different measures. ',
-      Image_3: '',
+      Image_3: require('./assets/scalene.png'),
       video: '',
       title_2: '',
       body_4: '- Isosceles triangle: An isosceles triangle is a triangle in which two of the sides have the same length. The angles opposite these sides are also congruent (have the same measure). ',
-      Image_4: '',
+      Image_4: require('./assets/isosoles.png'),
       body_5: '- Equilateral triangle: An equilateral triangle is a triangle in which all three sides have the same length and all three angles have the same measure (60 degrees).',
       Image_5: '',
       body_6: '- Right triangle: A right triangle is a triangle in which one of the angles measures exactly 90 degrees (a right angle). The side opposite the right angle is called the hypotenuse, and the other two sides are called the legs.',
@@ -204,10 +204,10 @@ const Home = ({ navigation }) => {
     {
       id: 10,
       post_title: 'Loci',
-      postImage: require('./assets/sony-headset.jpeg'),
+      postImage: require('./assets/loci.jpeg'),
       title_1: '',
-      desc: 'Cycloids, Epicycloids, Hypocycloids, E',
-      body_1: '',
+      desc: 'Cycloids, Epicycloids, Hypocycloids...',
+      body_1: 'A Locus is a set of points satisfying a certain condition. For example, the locus of points that are 1cm from the origin is a circle of radius 1cm centered on the origin, since all points on the circle are 1cm from the origin',
       Image_1: '',
       body_2: '',
       Image_2: '',
@@ -225,7 +225,7 @@ const Home = ({ navigation }) => {
     {
       id: 11,
       post_title: 'Tangent to Conic Sections and Loci',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/tangents.png'),
       title_1: '',
       desc: 'Tangents and Normals to Conic sections and locis',
       body_1: 'A tangent to a curve is a straight line or a plane that touches the curve at a single point, but does not intersect the curve at that point. The point at which the tangent touches the curve is called the point of tangency. The tangent to a curve can be thought of as the limit of a secant line as the two points of intersection with the curve get closer and closer together. A tangent can be used to approximate the behavior of a curve in the neighborhood of the point of tangency. The slope of a tangent to a curve at a point is called the instantaneous slope or the local slope at that point. The tangent to a curve is important in the study of calculus and has many practical applications, including in the design of roads and in the analysis of the motion of objects.',
@@ -246,7 +246,7 @@ const Home = ({ navigation }) => {
     {
       id: 12,
       post_title: 'Tangency',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/tangency.jpeg'),
       title_1: '',
       desc: 'Introduction to Tangency and Arcs in Engineering Drawing',
       body_1: 'Tangency is the state of touching or being in contact at a single point without intersecting. In the context of geometry, tangency refers to the property of a curve or a surface of touching another curve or surface at a single point without intersecting. For example, a tangent to a curve is a straight line or a plane that touches the curve at a single point, but does not intersect the curve at that point. The point at which the tangent touches the curve is called the point of tangency. A tangent can be used to approximate the behavior of a curve in the neighborhood of the point of tangency. The slope of a tangent to a curve at a point is called the instantaneous slope or the local slope at that point. ',
@@ -267,28 +267,28 @@ const Home = ({ navigation }) => {
     {
       id: 13,
       post_title: 'Views in Technical/Engineering Drawing',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/views.png'),
       title_1: 'Types of projections in Technical Drawing',
       desc: 'Introduction to the Basic Views of Engineering Drawing',
       body_1: 'There are several types of projections used in technical drawing to represent three-dimensional objects on a two-dimensional plane. Some of the most common types of projections are:',
       Image_1: '',
       body_2: '1. Orthographic projection: This is a type of parallel projection that projects an object onto the plane by drawing lines that are perpendicular to the projection plane. It is a precise method of representing the object and is often used in engineering and manufacturing.',
-      Image_2: '',
+      Image_2: require('./assets/orthographic.png'),
       body_3: '2. Isometric projection: This is a type of orthographic projection that represents the object using equally spaced lines that are oriented at 120-degree angles to each other. It is a simple and effective way to represent the object and is often used in technical drawings and computer graphics.',
-      Image_3: '',
+      Image_3: require('./assets/isometric.jpeg'),
       video: '',
       title_2: '',
       body_4: '3. Dimetric projection: This is a type of orthographic projection that represents the object using equally spaced lines that are oriented at angles other than 90 degrees or 120 degrees to each other. It is less common than isometric projection, but it can be used to create more realistic representations of the object.',
       Image_4: '',
       body_5: '4. Perspective projection: This is a type of projection that represents the object using converging lines that give the illusion of depth and distance. It is a more realistic method of representing the object, but it is less precise than orthographic projection.',
-      Image_5: '',
+      Image_5: require('./assets/perspective.jpeg'),
       body_6: '5. Oblique projection: This is a type of projection that represents the object by projecting it onto the plane at an angle, rather than perpendicularly. It is a simple method of representation, but it can distort the object size and shape.',
-      Image_6: '',
+      Image_6: require('./assets/oblique.jpeg'),
     },
     {
       id: 14,
       post_title: 'Isometric Projection',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/isometric.jpeg'),
       title_1: '',
       desc: 'Constructing and Interpreting Isometric Figures',
       body_1: 'An isometric projection is a type of graphical projection that is used to represent three-dimensional objects on a two-dimensional plane. It is a form of orthographic projection, which means that it projects objects onto the plane without any distortion of size or shape. In an isometric projection, the three coordinate axes of the object are represented by equally spaced lines that are oriented at 120-degree angles to each other. This creates the illusion of depth and allows the viewer to perceive the relationships between the various parts of the object. Isometric projections are often used in technical drawings and computer graphics, as they are easy to create and provide a clear and accurate representation of the object. They are also used in video games and other interactive media, as they allow the object to be rotated and viewed from any angle.',
@@ -309,7 +309,7 @@ const Home = ({ navigation }) => {
     {
       id: 15,
       post_title: 'Orthographic Projection',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/orthographic.png'),
       title_1: '',
       desc: 'Orthographic Projections in Engineering Drawing',
       body_1: 'Orthographic projection is a type of graphical projection that is used to represent three-dimensional objects on a two-dimensional plane. It is a form of parallel projection, which means that it projects objects onto the plane by drawing lines that are parallel to the projection plane. In orthographic projection, the three-dimensional object is viewed from a fixed point in space, and the projection lines are perpendicular to the projection plane. The result is a set of two-dimensional views of the object that can be used to represent the object accurately. Orthographic projection is often used in technical drawing and computer graphics, as it provides an accurate representation of the object and allows the viewer to see all sides of the object.',
@@ -330,7 +330,7 @@ const Home = ({ navigation }) => {
     {
       id: 16,
       post_title: 'Sectioning',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/sectioning.jpeg'),
       title_1: '',
       desc: 'Sectioning Views in Engineering Drawing',
       body_1: 'Sectioning is a technique that is used in technical drawing and engineering to represent the internal structure of an object. It involves cutting through the object along a specific plane and showing the cross-section of the object in a drawing. Sectioning is often used to represent the internal features of an object that are not visible from the outside, such as the cross-section of a pipe or the internal structure of a machine. It is also used to show the relationships between the various parts of an object and to illustrate how the object is assembled or disassembled.',
@@ -351,7 +351,7 @@ const Home = ({ navigation }) => {
     {
       id: 17,
       post_title: 'Assembly Drawing',
-      postImage: require('./assets/af-1.jpeg'),
+      postImage: require('./assets/assembly.jpeg'),
       title_1: '',
       desc: 'Assembly Engineering Drawing',
       body_1: 'An assembly drawing is a type of technical drawing that shows how the various parts of a device or a machine fit together to form the complete product.',
@@ -376,14 +376,28 @@ const Home = ({ navigation }) => {
     )
   }
   const seperator = () => {
-    return <View style={{ height: 1, width: '100%', backgroundColor: '#cce' }} />
+    return <View style={{ height: 1, width: '80%', backgroundColor: '#cce888' }} />
   }
   const renderItems = ({ item }) => {
+    const [modalVisible, setModalVisible] = useState(false);
+    const [internet, setInternet] = useState(false);
+    function checkConn() {
+      NetInfo.fetch().then((state) => {
+        state.isConnected ? setInternet(true) : setInternet(false)
+      })
+    }
+
+    useEffect(() => {
+      const online = NetInfo.addEventListener(state => {
+        state.isConnected ? setInternet(true) : setInternet(false)
+      })
+      return () => online();
+    }, [modalVisible, internet, navigation])
     return (
       <TouchableOpacity
         style={Styles.items}
         key={item.id}
-        onPress={() => { navigation.navigate('HomeDetailed', { context: item.post_title, desc: item.desc, image: item.postImage, title_1: item.title_1, body_1: item.body_1, image_1: item.Image_1, body_2: item.body_2, image_2: item.Image_2, body_3: item.body_3, image_3: item.Image_3, video: item.video, title_2: item.title_2 }) }}>
+        onPress={() => { checkConn(); internet ? navigation.navigate('HomeDetailed', { context: item.post_title, desc: item.desc, image: item.postImage, title_1: item.title_1, body_1: item.body_1, image_1: item.Image_1, body_2: item.body_2, image_2: item.Image_2, body_3: item.body_3, image_3: item.Image_3, video: item.video, title_2: item.title_2, body_4: item.body_4, image_4: item.image_4, body_5: item.body_5, image_5: item.image_5, body_6: item.body_6, image_6: item.image_6 }) : navigation.navigate('Connection'); }}>
         <View style={Styles.thumbNailContainer}>
           <Image style={Styles.thumbNail} source={item.postImage} />
         </View>
@@ -393,19 +407,7 @@ const Home = ({ navigation }) => {
         </View>
       </TouchableOpacity>)
   }
-  const [modalVisible, setModalVisible] = useState(false);
-  const [internet, setInternet] = useState(false);
-  function checkConn(){
-    NetInfo.fetch().then((state)=> {
-      state.isConnected ? setInternet(true) : setInternet(false)
-    })
-  }
-  useEffect(()=> {
-    const online = NetInfo.addEventListener(state => {
-      state.isConnected ? setInternet(true) : setInternet(false)
-    })
-    return ()=> online();
-  },[modalVisible, internet])
+
   return (
     <View style={Styles.container}>
       <FlatList
@@ -419,25 +421,8 @@ const Home = ({ navigation }) => {
         renderItem={renderItems}
         ItemSeparatorComponent={seperator}
         ListEmptyComponent={<Text>Please wait while loading...</Text>}
-        keyExtractor={data.id} />
-        <Modal
-          animationType='slide'
-          transparent='true'
-          visible={modalVisible}
-          onRequestClose={()=> {setModalVisible(!modalVisible); Alert.alert('checking your internet connection')} }
-          >
-            <View>
-              <View>
-                <Text>
-                  Internet Not Reachable!!!
-                </Text>
-                <Text>For Optimum performance of this app you need an active internet connection</Text>
-              </View>
-              <Pressable onPress={checkConn}>
-                Refresh Connection Status.
-              </Pressable>
-            </View>
-        </Modal>
+        keyExtractor={data.id}
+      />
     </View>
   )
 }
@@ -498,6 +483,7 @@ const Styles = StyleSheet.create({
     opacity: 0.5,
     paddingTop: 5,
     marginLeft: 20,
+    marginRight:10,
     paddingRight: 60,
     color: '#0077fa'
   },
