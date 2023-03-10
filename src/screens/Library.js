@@ -16,7 +16,7 @@ const Library = ({ navigation }) => {
       title: "Division of Lines",
       image: '',
       video: '2Cds4GwmZ5k',
-      body: 'Divide a Straight line into an equal number of parts',
+      body: 'Divide a Straight line of given length into an equal number of parts',
     },
     {
       id: 3,
@@ -27,45 +27,45 @@ const Library = ({ navigation }) => {
     },
     {
       id: 4,
-      title: "Angle 60 Degrees",
+      title: "Triangles",
       image: '',
       video: 'ow_lFFk6YeA',
-      body: 'Constructing angle 60 Degrees and Bisecting it',
+      body: 'Know the different types of triangles in Engineering drawing',
     },
     {
       id: 5,
       title: "Angle 90 Degrees",
       image: '',
       video: '4jTrWiry-dQ',
-      body: '',
+      body: 'Learn the Construction of Angle 90 degrees',
     },
     {
       id: 6,
       title: "Construct any Polygon on a given square base",
       image: '',
       video: 'Wd3dQ0bwvaI',
-      body: '',
+      body: 'Learn how to construct any polygon of given length of a side.',
     },
     {
       id: 7,
       title: "Construct Polygon using General method",
       image: '',
       video: 'cwDdRgn4R4c',
-      body: '',
+      body: 'Construct any polygon of any number of sides using the general method.',
     },
     {
       id: 8,
-      title: "Construct an Ellipse using Rectangle Method",
+      title: "Construct a Hexagon",
       image: '',
-      video: '',
-      body: '',
+      video: 'sHV8WysIc9Y',
+      body: 'Learn how to easily construct a Hexagon in a few steps',
     },
     {
       id: 9,
       title: "Construct an Ellipse using Auxillary Method",
       image: '',
       video: 'QmWIwJ45_EI',
-      body: '',
+      body: 'Construct an Ellipse using the Concentric Circle method (Auxillary Method)',
     },
     {
       id: 10,
@@ -320,7 +320,7 @@ const Library = ({ navigation }) => {
       body: '',
     }
   ]
-  const [internet, setInternet] = useState(false);
+  const [internet, setInternet] = useState(true);
   const headerBlock = () => {
     return (
       <Text style={Styles.headStyle}>LIBRARY</Text>
@@ -335,7 +335,12 @@ const Library = ({ navigation }) => {
         state.isConnected ? setInternet(true) : setInternet(false)
       })
     }
-
+    function truncate(input){
+      if (input.length > 15) {
+        return input.substring(0, 20) + '...'
+      }
+      return input;
+    }
     return (
       <TouchableOpacity
         style={Styles.items}
@@ -346,7 +351,7 @@ const Library = ({ navigation }) => {
         }}>
         <View>
           <Text
-            style={Styles.title}>{item.title}</Text>
+            style={Styles.title}>{truncate(item.title)}</Text>
         </View>
       </TouchableOpacity>)
   }

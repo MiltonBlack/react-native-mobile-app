@@ -190,7 +190,7 @@ const Home = ({ navigation }) => {
       Image_2: '',
       body_3: '- Scalene triangle: A scalene triangle is a triangle in which all three sides have different lengths and all three angles have different measures. ',
       Image_3: require('./assets/scalene.png'),
-      video: '',
+      video: '_B3R4yTeT9w',
       title_2: '',
       body_4: '- Isosceles triangle: An isosceles triangle is a triangle in which two of the sides have the same length. The angles opposite these sides are also congruent (have the same measure). ',
       Image_4: require('./assets/isosoles.png'),
@@ -234,7 +234,7 @@ const Home = ({ navigation }) => {
       Image_2: '',
       body_3: '',
       Image_3: '',
-      video: '',
+      video: '5J-v1J760Ic',
       title_2: '',
       body_4: '',
       Image_4: '',
@@ -255,7 +255,7 @@ const Home = ({ navigation }) => {
       Image_2: '',
       body_3: '',
       Image_3: '',
-      video: '',
+      video: 'z7QUMAyvaTo',
       title_2: 'ARCS - Internal and External Arcs',
       body_4: 'An arc is a portion of the circumference of a circle or another curve. It is a continuous section of the curve that is bounded by two distinct endpoints, called the endpoints of the arc. The length of an arc is called the arc length, and it is a measure of the distance along the curve between the endpoints of the arc. The arc length of a circular arc is equal to the product of the radius of the circle and the central angle of the arc, which is the angle between two radii drawn to the endpoints of the arc.',
       Image_4: '',
@@ -297,7 +297,7 @@ const Home = ({ navigation }) => {
       Image_2: '',
       body_3: '',
       Image_3: '',
-      video: '',
+      video: '9ZtIqL3Kr2A',
       title_2: '',
       body_4: '',
       Image_4: '',
@@ -318,7 +318,7 @@ const Home = ({ navigation }) => {
       Image_2: '',
       body_3: '',
       Image_3: '',
-      video: '',
+      video: '12ev-qLu8D0',
       title_2: '',
       body_4: '',
       Image_4: '',
@@ -339,7 +339,7 @@ const Home = ({ navigation }) => {
       Image_2: '',
       body_3: 'Sectional views are drawings that show the cross-section of an object along a specific plane. They are used to represent the internal structure of an object and to show the relationships between the various parts of the object. Sectional views are created by cutting through the object along the specified plane and showing the resulting cross-section in a drawing. ',
       Image_3: '',
-      video: '',
+      video: '1CgUQtOKzSY',
       title_2: '',
       body_4: '. They are often used in technical drawings and engineering to illustrate the internal features of an object that are not visible from the outside, such as the cross-section of a pipe or the internal structure of a machine. Sectional views can be created using various types of projection, such as orthographic projection or isometric projection, depending on the needs of the drawing. They are an important tool for understanding the internal structure and operation of an object and are often used in engineering, manufacturing, and repair.',
       Image_4: '',
@@ -385,7 +385,12 @@ const Home = ({ navigation }) => {
         state.isConnected ? setInternet(true) : setInternet(false)
       })
     }
-
+    function truncate(input){
+      if (input.length > 15) {
+        return input.substring(0, 34) + '...'
+      }
+      return input;
+    }
     return (
       <TouchableOpacity
         style={Styles.items}
@@ -395,8 +400,8 @@ const Home = ({ navigation }) => {
           <Image style={Styles.thumbNail} source={item.postImage} />
         </View>
         <View>
-          <Text style={Styles.title}>{item.post_title}</Text>
-          <Text style={Styles.desc}>{item.desc}</Text>
+          <Text style={Styles.title}>{truncate(item.post_title)}</Text>
+          <Text style={Styles.desc}>{truncate(item.desc)}</Text>
         </View>
       </TouchableOpacity>)
   }

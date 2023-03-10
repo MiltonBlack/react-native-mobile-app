@@ -6,11 +6,13 @@ const LibraryDetailed = ({ route }) => {
   return (
     <View>
       <Text style={Styles.title}>{route.params.context}</Text>
-      <YoutubeIframe
-        height={300}
-        play={false}
-        videoId={route.params.video} />
-      <Text style={{ margin: 10 , color:'red',}}>Put on your Internet Connection For video streaming from youtube</Text>
+      <View style={{ height: 250, width: '100%', backgroundColor:'black' }}>
+        <YoutubeIframe
+          height={300}
+          play={false}
+          videoId={route.params.video} />
+      </View>
+      <Text style={{ margin: 10, color: 'red', textAlign:'center' }}>Put on your Internet Connection For video streaming from youtube</Text>
       <ScrollView>
         <Text style={Styles.desc}>{route.params.content}</Text>
         <Image style={Styles.image} source={route.params.image} />
