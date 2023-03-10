@@ -11,14 +11,11 @@ const Settings = () => {
       <Seperator />
       <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Appearance Settings</Text>
       <Seperator />
-      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Rating</Text>
+      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Update</Text>
       <Seperator />
-      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Review</Text>
+      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Subscribe</Text>
       <View style={{ height: 350 }}></View>
-      <Button
-        title='Light/Dark Mode'
-        color="#841584"
-      />
+      <Button title='hello'/>
     </View>
   )
 }

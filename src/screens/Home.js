@@ -40,7 +40,7 @@ const Home = ({ navigation }) => {
       video: '',
       title_2: 'Methods of Representation of Engineering / Technical Drawing',
       body_4: 'Technical Drawings come in a variety of forms, such as 3D drawings (Isometric, Perpective), 3D drawings with an expanded view, complete working drawings, and detail drawings (2D Orthogonal Projections). Diagrams are another sort of Technical drawing with less rigid Data.',
-      Image_4: require('./assets/views.jpeg'),
+      Image_4: require('./assets/views.png'),
       body_5: '3D Drawing: Isometric Projections',
       Image_5: require('./assets/isometric.jpeg'),
       body_6: '2D Drawing: Orthographic Projections',
@@ -370,6 +370,7 @@ const Home = ({ navigation }) => {
       Image_6: '',
     },
   ]);
+  const [internet, setInternet] = useState(false);
   const headerBlock = () => {
     return (
       <Text style={Styles.headStyle}>Table of Contents</Text>
@@ -379,20 +380,12 @@ const Home = ({ navigation }) => {
     return <View style={{ height: 1, width: '80%', backgroundColor: '#cce888' }} />
   }
   const renderItems = ({ item }) => {
-    const [modalVisible, setModalVisible] = useState(false);
-    const [internet, setInternet] = useState(false);
     function checkConn() {
       NetInfo.fetch().then((state) => {
         state.isConnected ? setInternet(true) : setInternet(false)
       })
     }
 
-    useEffect(() => {
-      const online = NetInfo.addEventListener(state => {
-        state.isConnected ? setInternet(true) : setInternet(false)
-      })
-      return () => online();
-    }, [modalVisible, internet, navigation])
     return (
       <TouchableOpacity
         style={Styles.items}
@@ -407,7 +400,12 @@ const Home = ({ navigation }) => {
         </View>
       </TouchableOpacity>)
   }
-
+  useEffect(() => {
+    const online = NetInfo.addEventListener(state => {
+      state.isConnected ? setInternet(true) : setInternet(false)
+    })
+    return () => online();
+  }, [ internet, navigation])
   return (
     <View style={Styles.container}>
       <FlatList

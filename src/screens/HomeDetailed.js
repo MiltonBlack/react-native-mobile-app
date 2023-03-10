@@ -1,4 +1,4 @@
-import { View, Text, Image, StyleSheet, ScrollView } from 'react-native'
+import { Text, Image, StyleSheet, ScrollView } from 'react-native'
 import React from 'react'
 import YoutubeIframe from 'react-native-youtube-iframe'
 

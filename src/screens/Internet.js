@@ -1,24 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import NetInfo from '@react-native-community/netinfo'
 
 const Internet = ({ navigation }) => {
     const [isInternetConnected, setInternetIsConnected] = useState(false);
-    useEffect(() => {
-        const online = NetInfo.addEventListener(state => {
+    function checkConn() {
+        NetInfo.fetch().then((state) => {
             state.isConnected ? setInternetIsConnected(true) : setInternetIsConnected(false)
         })
-        isInternetConnected ? navigation.navigate('Engineering Drawing Tutorials') : null;
-        return () => online();
-    }, [])
+    }
     return (
         <View style={Styles.container}>
             <Text style={Styles.text}>
                 Your Internet is Not connected! or you don't have an Active Internet Connection!!!.
             </Text>
-            <Text style={Styles.text}>Please Connect to the Internet</Text>
-            <TouchableOpacity onPress={() => isInternetConnected ? navigation.navigate('Engineering Drawing Tutorials') : null} style={Styles.refresh}>
-                <Text style={{ fontSize: 25 }}>
+            <Text style={Styles.text}>Please Refresh to get Connect to the Internet</Text>
+            <TouchableOpacity onPress={() => { checkConn(); isInternetConnected ? navigation.navigate('Engineering Drawing Tutorials') : null; }} style={Styles.refresh}>
+                <Text style={{ fontSize: 25, color: 'white', fontWeight: '700' }}>
                     Refresh Connection!!!
                 </Text>
             </TouchableOpacity>
@@ -32,7 +30,7 @@ const Styles = StyleSheet.create({
         height: '100%',
         alignItems: 'center',
         justifyContent: 'center',
-        margin: 15
+        margin: 5
     },
     refresh: {
         fontSize: 25,
@@ -44,6 +42,7 @@ const Styles = StyleSheet.create({
     text: {
         margin: 10,
         fontSize: 20,
+        textAlign:'center'
     }
 })
 
