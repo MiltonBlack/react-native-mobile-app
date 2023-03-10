@@ -19,9 +19,9 @@ function Splash({ navigation }) {
         isOffline ? navigation.navigate('Connection') : navigation.replace('Engineering Drawing Tutorials')
     }, 3000)
     return (
-        <View>
-            <Image source={require('./splash-image.png')} style={{ height: 400, width: 400, alignSelf: 'center' }} />
-            <Text style={{ fontSize: 35, textAlign: 'center', color: 'black', flexDirection: 'column', justifyContent: 'space-between', marginTop: '30%', paddingVertical: 30, paddingHorizontal: 8 }}>Engineering Drawing Tutorials by Milton Azibapu</Text>
+        <View style={{ margin: 5 }}>
+            <Image source={require('./splash-image.png')} style={{ height: 300, width: 300, alignSelf: 'center' }} />
+            <Text style={{ fontSize: 20, textAlign: 'center', color: 'black', flexDirection: 'column', justifyContent: 'space-between', marginTop: '30%', paddingVertical: 30, paddingHorizontal: 8 }}>Engineering Drawing Tutorials by Black Dice Graphics</Text>
         </View>
     )
 }

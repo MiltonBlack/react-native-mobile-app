@@ -377,7 +377,7 @@ const Home = ({ navigation }) => {
     )
   }
   const seperator = () => {
-    return <View style={{ height: 1, width: '80%', backgroundColor: '#cce888' }} />
+    return <View style={{ height: 1, width: '80%', backgroundColor: 'black' }} />
   }
   const renderItems = ({ item }) => {
     function checkConn() {

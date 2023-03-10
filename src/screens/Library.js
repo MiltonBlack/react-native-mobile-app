@@ -393,7 +393,7 @@ const Styles = StyleSheet.create({
     justifyContent: 'center',
     padding: 5,
     margin: 10,
-    backgroundColor: 'rgba(123, 123, 123, 0.98)',
+    backgroundColor: 'rgba(128, 128, 128, 0.98)',
     shadowColor: 'black',
     borderRadius: 23,
     shadowOffset: {
@@ -408,7 +408,7 @@ const Styles = StyleSheet.create({
     fontSize: 20,
     marginHorizontal: 10,
     padding: 10,
-    color: 'black',
+    color: 'white',
     textAlign: 'center',
 
   }
