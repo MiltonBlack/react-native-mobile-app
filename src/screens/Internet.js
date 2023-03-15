@@ -6,7 +6,7 @@ const Internet = ({ navigation }) => {
     const [isInternetConnected, setInternetIsConnected] = useState(false);
     function checkConn() {
         NetInfo.fetch().then((state) => {
-            state.isConnected ? setInternetIsConnected(true) : setInternetIsConnected(false)
+            state.isConnected ? setInternetIsConnected(true) : setInternetIsConnected(false);
         })
     }
     return (
@@ -20,6 +20,7 @@ const Internet = ({ navigation }) => {
                     Refresh Connection!!!
                 </Text>
             </TouchableOpacity>
+            <Text style={Styles.text} onPress={() => navigation.navigate('Engineering Drawing Tutorials')}>Go Back</Text>
         </View>
     )
 }

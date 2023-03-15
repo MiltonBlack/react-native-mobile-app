@@ -1,35 +1,25 @@
-import { View, Text, Button, Linking, Alert } from 'react-native'
-import React, { useCallback } from 'react'
+import { View, Text, Linking, Button } from 'react-native'
+import React from 'react'
 
 const Settings = () => {
   const url = 'https://www.youtube.com/@engineeringgraphics4978';
 
-  const canOpenUrlLinkButton = ({ url, children }) => {
-    const handlePress = useCallback(async () => {
-      const supported = await Linking.canOpenURL(url);
-      if (supported) {
-        await Linking.openURL(url);
-      } else {
-        Alert.alert(`Invalid URL Link: ${url}`)
-      }
-    }, [url])
-    return <Button title={children} onPress={handlePress} />
-  };
   const Seperator = () => {
     return <View style={{ height: 1, width: '100%', backgroundColor: '#cce' }} />
   }
   return (
     <View style={{ margin: 20 }}>
-      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>My Profile</Text>
+      {/* <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>My Profile</Text>
+      <Seperator /> */}
+      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Appearance Settings (coming soon)</Text>
       <Seperator />
-      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Appearance Settings</Text>
+      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Update (coming soon)</Text>
       <Seperator />
-      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Update</Text>
-      <Seperator />
-      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }} onPress={()=> Linking.openURL(url)}>Subscribe to our Tutorial Channel for more content</Text>
-      <canOpenUrlLinkButton url={url}>Subscribe to our channel</canOpenUrlLinkButton>
-      <View style={{ height: 350 }}></View>
-      {/* <Button title='hello' /> */}
+      <View style={{ height: 250 }}></View>
+      <Button style={{ color: 'white', fontSize: 22, marginBottom: 20, padding:20, backgroundColor: "red" }} onPress={()=> Linking.openURL(url)} title='Subscribe to our YOUTUBE Channel'/>
+      <View style={{ height: 10 }}></View>
+      <Text>Support The Developers by subscribing to our Youtube Channel</Text>
+      <Text>Contact us on : arzidrey@gmail.com</Text>
     </View>
   )
 }
