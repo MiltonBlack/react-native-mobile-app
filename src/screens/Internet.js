@@ -14,13 +14,13 @@ const Internet = ({ navigation }) => {
             <Text style={Styles.text}>
                 Your Internet is Not connected! or you don't have an Active Internet Connection!!!.
             </Text>
-            <Text style={Styles.text}>Please Refresh to get Connect to the Internet</Text>
+            <Text style={Styles.text}>Please Refresh to get Connected to the Internet</Text>
             <TouchableOpacity onPress={() => { checkConn(); isInternetConnected ? navigation.navigate('Engineering Drawing Tutorials') : null; }} style={Styles.refresh}>
                 <Text style={{ fontSize: 25, color: 'white', fontWeight: '700' }}>
                     Refresh Connection!!!
                 </Text>
             </TouchableOpacity>
-            <Text style={Styles.text} onPress={() => navigation.navigate('Engineering Drawing Tutorials')}>Go Back</Text>
+            <Text style={Styles.text} onPress={() => navigation.replace('Engineering Drawing Tutorials')}>Go Back</Text>
         </View>
     )
 }

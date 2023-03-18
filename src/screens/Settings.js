@@ -9,14 +9,12 @@ const Settings = () => {
   }
   return (
     <View style={{ margin: 20 }}>
-      {/* <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>My Profile</Text>
-      <Seperator /> */}
-      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Appearance Settings (coming soon)</Text>
+      <Text style={{ color: 'grey', fontSize: 20, marginBottom: 20 }}>Appearance Settings (coming soon)</Text>
       <Seperator />
-      <Text style={{ color: 'black', fontSize: 20, marginBottom: 20 }}>Update (coming soon)</Text>
+      <Text style={{ color: 'grey', fontSize: 20, marginBottom: 20 }}>Update (coming soon)</Text>
       <Seperator />
       <View style={{ height: 250 }}></View>
-      <Button style={{ color: 'white', fontSize: 22, marginBottom: 20, padding:20, backgroundColor: "red" }} onPress={()=> Linking.openURL(url)} title='Subscribe to our YOUTUBE Channel'/>
+      <Button color='red' onPress={()=> Linking.openURL(url)} title='Subscribe to our YOUTUBE Channel'/>
       <View style={{ height: 10 }}></View>
       <Text>Support The Developers by subscribing to our Youtube Channel</Text>
       <Text>Contact us on : arzidrey@gmail.com</Text>
