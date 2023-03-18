@@ -38,6 +38,9 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# Android Studio
+android/app/my-upload-key.keystore
+
 # BUCK
 buck-out/
 \.buckd/
